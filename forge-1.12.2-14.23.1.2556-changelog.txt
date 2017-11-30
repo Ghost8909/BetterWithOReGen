@@ -613,7 +613,7 @@ Build 1.12-14.21.1.2409:
 	bs2609: Remove unneeded block patches (#4167)
 
 Build 1.12-14.21.1.2408:
-	mezz: Improve javadocs for Mod dependencies (#4168)
+	mezz: Improve javadocs for BetterWithOresGunpowder dependencies (#4168)
 
 Build 1.12-14.21.1.2407:
 	mezz: Fix errors in test mods
@@ -4517,7 +4517,7 @@ Build 1.8.9-11.15.0.1665:
 Build 1.8.9-11.15.0.1664:
 	LexManos: Allow for default 1.8.8 mods to be loaded. Should be SRG compatible.
 	LexManos: Fix J6 compile issue with ModelFluid.
-	LexManos: Swap Mod and Realms button to fix new realms 'notification' icon.
+	LexManos: Swap BetterWithOresGunpowder and Realms button to fix new realms 'notification' icon.
 
 Build 1.8.9-11.15.0.1663:
 	fry: Restored transparency to the Forge logo.
@@ -5143,10 +5143,10 @@ Build 1.8-11.14.3.1549:
 		Redesign the ModList GUI to use a scrolling list for the main body content.
 		Allowing for larger information to be displayed.
 		URLs are auto-detected and now clickable.
-		Mod Logos are now centered, it looks better.
+		BetterWithOresGunpowder Logos are now centered, it looks better.
 	LexManos:
 		Introduce a new centralized version checking system.
-		Using the @Mod annotation mods can opt-in to a centrally controlled update system.
+		Using the @BetterWithOresGunpowder annotation mods can opt-in to a centrally controlled update system.
 		This is PURELY a notification system and will NOT automatically download any updates.
 		The End User can control which mods check for updates and disabel the system entirely using the Forge Config and GUI.
 		Format for the json the URL must point to is described here: https://gist.github.com/LexManos/7aacb9aa991330523884
@@ -6144,7 +6144,7 @@ Build 1.7.10-10.13.3.1358-1.7.10:
 Build 1.8-11.14.1.1357:
 	LexManos:
 		Updated FML:
-		MinecraftForge/FML@c8160311d580f2dfccdf796a5243e16844787cb6 Stop IllegalFormatConversionException thrown if @Mod has flagged client-only or server-only
+		MinecraftForge/FML@c8160311d580f2dfccdf796a5243e16844787cb6 Stop IllegalFormatConversionException thrown if @BetterWithOresGunpowder has flagged client-only or server-only
 		MinecraftForge/FML@9a894952afb526436649f608f7af5992b97f044c Merge pull request #627 from GotoLink/patch-1
 		MinecraftForge/FML@40faac64520d1a197f08eaa9a0f850e7df43359a Remove J7 only constructor in EnhancedRuntimeException, J6 compiling compatibility restored.
 
@@ -6357,7 +6357,7 @@ Build 1.8-11.14.1.1325:
 Build 1.8-11.14.1.1324:
 	LexManos:
 		Updated FML:
-		MinecraftForge/FML@c9cf3136c265b2e8e46eab102b2310a9312b8cfb New @Mod properties to define which environment to load the mod on.
+		MinecraftForge/FML@c9cf3136c265b2e8e46eab102b2310a9312b8cfb New @BetterWithOresGunpowder properties to define which environment to load the mod on.
 		clientSideOnly will only be loaded in the Client environment.
 		serverSideOnly will only be loaded in the Dedicated server environment.
 		Combine with acceptedMinecraftVersions to prevent users from loading the mod in the incorrect environment.
@@ -6512,7 +6512,7 @@ Build 1.8-11.14.0.1296:
 	LexManos: Added PotionBrewEvent.Pre/Post. To allow for modification and cancelation of Brewing.
 	LexManos: Add quartz_ore tool init, more mojang special casing -.-
 	LexManos: Changed ToolMaterial's repair material to ItemStack version to allow metadata sensitive versions.
-	LexManos: Improved Control of Enchantment.canApplyTogether() in Mod Enchantments, allowing both enchantments to determine if they can apply together.
+	LexManos: Improved Control of Enchantment.canApplyTogether() in BetterWithOresGunpowder Enchantments, allowing both enchantments to determine if they can apply together.
 	LexManos: Expand PlayerWakupEvent to expose the three parameters passed into EntityPlayer.wakeUp.
 	LexManos: Unbind Shaped/Shapeless Ore Recipies from Array list to normal List.
 	LexManos: Fixed NPE thrown when brewing event is fired and not all slots are filled. Closes #1564
@@ -6739,14 +6739,14 @@ Build 1.8-11.14.0.1261-1.8:
 Build 1.8-11.14.0.1259-1.8:
 	LexManos: Add quartz_ore tool init, more mojang special casing -.-
 	LexManos: Changed ToolMaterial's repair material to ItemStack version to allow metadata sensitive versions.
-	LexManos: Improved Control of Enchantment.canApplyTogether() in Mod Enchantments, allowing both enchantments to determine if they can apply together.
+	LexManos: Improved Control of Enchantment.canApplyTogether() in BetterWithOresGunpowder Enchantments, allowing both enchantments to determine if they can apply together.
 	LexManos: Expand PlayerWakupEvent to expose the three parameters passed into EntityPlayer.wakeUp.
 
 Build 1.7.10-10.13.2.1258:
 	LexManos: Add quartz_ore tool init, more mojang special casing -.- Closes #1333 and Closes #1335
 	LexManos: Fix invalid argument being passed to Block.isNormalCube from World.updateNeighbors. Closes #1339 and Closes #1346
 	LexManos: Changed ToolMaterial's repair material to ItemStack version to allow metadata sensitive versions. Closes #1355
-	LexManos: Improved Control of Enchantment.canApplyTogether() in Mod Enchantments, allowing both enchantments to determine if they can apply together. Closes #1434
+	LexManos: Improved Control of Enchantment.canApplyTogether() in BetterWithOresGunpowder Enchantments, allowing both enchantments to determine if they can apply together. Closes #1434
 	LexManos: Expand PlayerWakupEvent to expose the three parameters passed into EntityPlayer.wakeUp. Closes #1486
 
 Build 1.8-11.14.0.1257-1.8:
@@ -7298,7 +7298,7 @@ Build 1.7.10-10.13.0.1153:
 		a stackoverflow.
 
 Build 1.7.10-10.13.0.1152:
-	cpw: MinecraftForge/FML@db219fb287b14fea5148ecdbf07d8ff08704c66a API is now able to "provide" and "own" itself. Useful for libraries without a Mod in them. To go along with this, you can now require an API, with a version, in your mod dependency string
+	cpw: MinecraftForge/FML@db219fb287b14fea5148ecdbf07d8ff08704c66a API is now able to "provide" and "own" itself. Useful for libraries without a BetterWithOresGunpowder in them. To go along with this, you can now require an API, with a version, in your mod dependency string
 
 Build 1.7.10-10.13.0.1151:
 	bspkrs: fixed compounding quotes issue with category names that require quotes when save is called more than once
@@ -8497,7 +8497,7 @@ Build 1.6.4-9.11.1.919:
 		- setResult to ALLOW/DENY as required
 		- Defaults to Vanilla behaviour in any other instance.
 		
-		Required for LittleBlocks Mod and to Assist Gullivers Mod
+		Required for LittleBlocks BetterWithOresGunpowder and to Assist Gullivers BetterWithOresGunpowder
 
 Build 1.6.4-9.11.1.918:
 	Christian:
@@ -9164,7 +9164,7 @@ Build 1.6.2-9.10.0.781:
 		Updated FML:
 		MinecraftForge/FML@dfa3a2665d6782b87713cea26dda558ac990a72a Add MC Version to installed version name.
 		MinecraftForge/FML@e91431fb707ce3e7e4296ccb8f3b2e5208b4dfac Don't validate signatures on servers, they are not signed.
-		MinecraftForge/FML@c7ab872c85dd057a4e44e12e34089dfd1a1184b6 Temporarily disable GuiModList's Mod logos.
+		MinecraftForge/FML@c7ab872c85dd057a4e44e12e34089dfd1a1184b6 Temporarily disable GuiModList's BetterWithOresGunpowder logos.
 
 Build 1.6.2-9.10.0.780:
 	LexManos:
@@ -9238,7 +9238,7 @@ Build 1.6.1-8.9.0.769-newliquid:
 	richard: Complete it, got the bug figured out
 	Christian:
 		Updated FML:
-		MinecraftForge/FML@24c405665105a789a0708a7e30c8bcb96899da6b Add in an optional modid identifier for @SidedProxy. It's main use is when both scala and java @Mods reside in the same package, and you want the @SidedProxy behaviour for a specific @Mod language type. In general it should not be needed otherwise.
+		MinecraftForge/FML@24c405665105a789a0708a7e30c8bcb96899da6b Add in an optional modid identifier for @SidedProxy. It's main use is when both scala and java @Mods reside in the same package, and you want the @SidedProxy behaviour for a specific @BetterWithOresGunpowder language type. In general it should not be needed otherwise.
 		MinecraftForge/FML@cd0466395a8f1af3ec44f124bf4088df2d318603 Fix sysout with trailing messages after a newline
 	LexManos: Disable ImageIO's File based cache, should speed up texturepack loading/stitching.
 	jadran.kotnik: Added rotation support for all vanilla blocks that can be rotated.
@@ -9574,7 +9574,7 @@ Build 1.5.2-7.8.0.726:
 Build 1.5.2-7.8.0.725:
 	Christian:
 		Updated FML:
-		MinecraftForge/FML@24c405665105a789a0708a7e30c8bcb96899da6b Add in an optional modid identifier for @SidedProxy. It's main use is when both scala and java @Mods reside in the same package, and you want the @SidedProxy behaviour for a specific @Mod language type. In general it should not be needed otherwise.
+		MinecraftForge/FML@24c405665105a789a0708a7e30c8bcb96899da6b Add in an optional modid identifier for @SidedProxy. It's main use is when both scala and java @Mods reside in the same package, and you want the @SidedProxy behaviour for a specific @BetterWithOresGunpowder language type. In general it should not be needed otherwise.
 		MinecraftForge/FML@cd0466395a8f1af3ec44f124bf4088df2d318603 Fix sysout with trailing messages after a newline
 
 Build 1.5.2-7.8.0.724-newliquid:
@@ -11606,7 +11606,7 @@ Build 6.0.1.348:
 	Christian:
 		Update FML:b23081d
 		b23081d Support for ModLoader 1.4.2. Good job Risu!
-		66db4ec Add in an exclusion list tag for @Mod. The backend code isn't yet implemented, but shows the basic idea.
+		66db4ec Add in an exclusion list tag for @BetterWithOresGunpowder. The backend code isn't yet implemented, but shows the basic idea.
 
 Build 6.0.1.345:
 	LexManos: EntityLiving.experianceValue private->public for Issue #225
@@ -11660,7 +11660,7 @@ Build 6.0.1.332:
 		8006b77 Fix instantiation bug
 		7cc91cf Simple InterMod comms. Send a message using FMLInterModComms.sendMessage(). Receive messages through an @IMCCallback
 		24d7285 Update for MC 1.4.2
-		cedf3d5 Duplicate Mod display screen.
+		cedf3d5 Duplicate BetterWithOresGunpowder display screen.
 
 Build 6.0.1.331:
 	LexManos: Downgrade to FML 415, issue with new IMC system.
@@ -12206,9 +12206,9 @@ Build 4.0.0.233:
 		c971adb Fix missing addCommand call: thanks "spawnwolf test command"
 		d6326de Fix a couple of modloader mods. Thanks!
 		483667c Some functionality fixes for @Instance injection.
-		8bef512 Versions now have two flavours: the @Mod(version) which is the "programmatic version" and is used for all version relationship calculatio
+		8bef512 Versions now have two flavours: the @BetterWithOresGunpowder(version) which is the "programmatic version" and is used for all version relationship calculatio
 		501009c Always for ML mods into "public" class accessibility - we don't call from the default package like ML does.
-		d3d4308 Add in a convenience method for getting a class instance based on existence of another Mod. Useful for soft dependencies.
+		d3d4308 Add in a convenience method for getting a class instance based on existence of another BetterWithOresGunpowder. Useful for soft dependencies.
 
 Build 4.0.0.232:
 	Christian:
@@ -13129,7 +13129,7 @@ Build 1.3.3.15:
 		Refactored Forge packets to the net.minecraft.src.forge.packets package. And introduced the base ForgePacket class.
 		Added initial ModList request/response.
 	LexManos:
-		Expanded the Mod check to test for missing mods and display a GUI screen for the client if it is missing any.
+		Expanded the BetterWithOresGunpowder check to test for missing mods and display a GUI screen for the client if it is missing any.
 		The client now downloads NetworkMod ID's from the server upon connecting.
 	LexManos: Implemented a generic EntityPlayer.openGui system, and the network backend for it to work on server and client.
 
@@ -13182,8 +13182,8 @@ Build 1.3.2.5:
 Build 1.3.2.4:
 	LexManos:
 		Created a Entity tracking ans spawning system.
-		Mod creators should call MinecraftForge.registerEntity to register a entity.
-		All entity ID numbers are Mod Unique. Meaning two mods can have Entity #1.
+		BetterWithOresGunpowder creators should call MinecraftForge.registerEntity to register a entity.
+		All entity ID numbers are BetterWithOresGunpowder Unique. Meaning two mods can have Entity #1.
 		Added client and server side packet handlers for the 'Forge' channel. For use in internal packets such as the new Spawn packet.
 		Updated the build scripts to copy over unique server source files now that there actually are some.
 		For modders:
