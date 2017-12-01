@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "tm:item/dust_saltpeter"
+        "layer0": "BetterWithOreGen:item/dust_salt"
     }
 }

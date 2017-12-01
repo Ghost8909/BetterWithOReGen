@@ -1,6 +1,6 @@
 [
 {
-  "modid": "tm",
+  "modid": "BetterWithOreGen",
   "name": "Better With Ore Gen",
   "description": "Adds ore generation for some things to allow believable methods to aquire materials that otherwise rely on unconventional (but really cool) methods.",
   "version": "${version}",
