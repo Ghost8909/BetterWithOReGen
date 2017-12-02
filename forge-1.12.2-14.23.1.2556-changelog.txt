@@ -760,7 +760,7 @@ Build 1.12-14.21.0.2374:
 Build 1.12-14.21.0.2373:
 	LexManos: Fix ItemStack/Block/BlockSpecial not applying at runtime.
 	LexManos: More work on registry override ability. Closes #4079
-	fry: Added dependencies and dependency ordering for assets.BetterWithOreGen.textures. (#4070)
+	fry: Added dependencies and dependency ordering for assets.betterwithoregen.textures. (#4070)
 	mezz: Remove the call to client.refreshResources during loading (#4032)
 	quadraxis: Remove some deprecated methods and clean up
 	LexManos: Fix substitution tests
@@ -1875,7 +1875,7 @@ Build 1.11-13.19.0.2144:
 	ezterry3:
 		Fix Villagers for 1.11 (#3401)
 		- Add cartographer registry entry
-		- Fix assets.BetterWithOreGen.textures for the nitwit
+		- Fix assets.betterwithoregen.textures for the nitwit
 
 Build 1.11-13.19.0.2143:
 	mezz: [1.11] Fix nullability issues around ForgeHooks and Capabilities (#3395)
@@ -2403,7 +2403,7 @@ Build 1.10.2-12.18.1.2026:
 	vincent.lee: Remove event stuff
 
 Build 1.10.2-12.18.1.2025:
-	mezz: Force mipmap even if assets.BetterWithOreGen.textures are the wrong size
+	mezz: Force mipmap even if assets.betterwithoregen.textures are the wrong size
 	mezz: Add TextureDump forge test mod
 
 Build 1.10.2-12.18.1.2024:
@@ -4452,7 +4452,7 @@ Build 1.8.9-11.15.0.1687:
 	fry: Added progress bar for the ModelLoader.
 
 Build 1.8.9-11.15.0.1686:
-	fry: Model loader improvements: adding custom data/assets.BetterWithOreGen.textures to models that don't need them doesn't cause a error now, since it's common to put those in the defaults section of the blockstate json; you can get IModel associated with the variant now - using ModelLoaderRegistry.getModel; MultiLayerModel should now respect transformations applied to it, and respect part transformations.
+	fry: Model loader improvements: adding custom data/assets.betterwithoregen.textures to models that don't need them doesn't cause a error now, since it's common to put those in the defaults section of the blockstate json; you can get IModel associated with the variant now - using ModelLoaderRegistry.getModel; MultiLayerModel should now respect transformations applied to it, and respect part transformations.
 	fry: Derp.
 
 Build 1.8.9-11.15.0.1684:
@@ -4674,7 +4674,7 @@ Build 1.8.8-11.15.0.1655:
 		- Fix console spamming command prefixes after closing the input stream
 	bernhard.bonigl: Add shouldRender() to Potions that allows to hide them completely in the inventory
 	LexManos: Remove MCP reference patches.
-	LexManos: Fixed colored leather armor, and custom armor assets.BetterWithOreGen.textures.
+	LexManos: Fixed colored leather armor, and custom armor assets.betterwithoregen.textures.
 	fry: Fixed orientations of generated item faces. Fixes #2215.
 	fry: Workaround for https://github.com/google/guava/issues/738
 	bx9j52xd: Fixed that oldLight is not being used.
@@ -4692,7 +4692,7 @@ Build 1.8.8-11.15.0.1655:
 	cpw:
 		A test for issue #1848. Please try this with any mods you can @ 1.8.8, and see if you still get log spam of any kind (not just the
 		log message from the issue either).
-	AlgorithmX2: Added addLandingEffects allowing mods to override landing particles, for blocks that require world information to determine assets.BetterWithOreGen.textures.
+	AlgorithmX2: Added addLandingEffects allowing mods to override landing particles, for blocks that require world information to determine assets.betterwithoregen.textures.
 	LexManos: Fix enchanting applying the same enchantment multiple times. Closes #2273
 	fry:
 		Preparations for the Animation system.
@@ -4702,14 +4702,14 @@ Build 1.8.8-11.15.0.1655:
 	fry: Forge pipeline will now take original model lightmap into account, if present.
 	fry: Delayed quad list resolution in MultiModel, fixes NPE in MultiLayerModel.
 	fry: LightUtil.pack and .unpack now work correctly with unpacked arrays of size <4.
-	fry: Fix dependency resolution for models with custom data/assets.BetterWithOreGen.textures.
+	fry: Fix dependency resolution for models with custom data/assets.betterwithoregen.textures.
 	jadran.kotnik: Fix client side commands adding parts of the color codes on autocomplete (prefix "7" and suffix "r").
 	fry: Fixed NPE caused by accessing undefined layer in MultiLayerModel.
 	bernhard.bonigl:
 		Add a dynamic bucket model that displays the animated liquid contained
 		Has a config option (default off) that replaces the vanilla buckets with the forge bucket model
 		
-		New original bucket assets.BetterWithOreGen.textures from mr_hazard
+		New original bucket assets.betterwithoregen.textures from mr_hazard
 	LexManos:
 		Fixed registry issues that prevented connecting to 1.8 Forge servers.
 		More precisely: Servers with missing registries default back to frozen version.
@@ -4794,7 +4794,7 @@ Build 1.8.8-11.15.0.1638-1.8.8:
 		Add a dynamic bucket model that displays the animated liquid contained
 		Has a config option (default off) that replaces the vanilla buckets with the forge bucket model
 		
-		New original bucket assets.BetterWithOreGen.textures from mr_hazard
+		New original bucket assets.betterwithoregen.textures from mr_hazard
 
 Build 1.8.8-11.15.0.1637-1.8.8:
 	fry: Fixed NPE caused by accessing undefined layer in MultiLayerModel.
@@ -4803,7 +4803,7 @@ Build 1.8.8-11.15.0.1636-1.8.8:
 	jadran.kotnik: Fix client side commands adding parts of the color codes on autocomplete (prefix "7" and suffix "r").
 
 Build 1.8.8-11.15.0.1635-1.8.8:
-	fry: Fix dependency resolution for models with custom data/assets.BetterWithOreGen.textures.
+	fry: Fix dependency resolution for models with custom data/assets.betterwithoregen.textures.
 
 Build 1.8.8-11.15.0.1634-1.8.8:
 	fry: LightUtil.pack and .unpack now work correctly with unpacked arrays of size <4.
@@ -4823,7 +4823,7 @@ Build 1.8.8-11.15.0.1630-1.8.8:
 		Changes to the Model API - IModelState now works with Optional. Handling of parts of the model is not optional, and coordinate space/result interpretation is up to the caller. IModel doesn't extend IModelPart by default anymore; MapModelState uses composition to achieve previous functionality, IModelPart implementations are disjoint now. Updated perspective handing to the new API, removed IPerspectiveState (MapModelState is now the same thing). Perspective transforms for the default fluid model.
 
 Build 1.8.8-11.15.0.1628-1.8.8:
-	AlgorithmX2: Added addLandingEffects allowing mods to override landing particles, for blocks that require world information to determine assets.BetterWithOreGen.textures.
+	AlgorithmX2: Added addLandingEffects allowing mods to override landing particles, for blocks that require world information to determine assets.betterwithoregen.textures.
 
 Build 1.8.8-11.15.0.1627-1.8.8:
 	AlgorithmX2: Add getHighlightTip allowing a item to override its displayed renderToolHightlight.
@@ -4889,7 +4889,7 @@ Build 1.8.8-11.15.0.1611-1.8.8:
 
 Build 1.8.8-11.15.0.1610-1.8.8:
 	LexManos: Remove MCP reference patches.
-	LexManos: Fixed colored leather armor, and custom armor assets.BetterWithOreGen.textures.
+	LexManos: Fixed colored leather armor, and custom armor assets.betterwithoregen.textures.
 
 Build 1.8.8-11.15.0.1609-1.8.8:
 	cpw: Add a flag to the modidremapping event. If the remapevent is because the registry is refreezing, it'll be true.
@@ -5127,11 +5127,11 @@ Build 1.8-11.14.3.1551:
 
 Build 1.8-11.14.3.1550:
 	Choonster.2010:
-		Fix texture error message for broken assets.BetterWithOreGen.textures
+		Fix texture error message for broken assets.betterwithoregen.textures
 		
 		-- Fixes #2100
 		-- Iterates over badTextureDomains instead of missingTextures.keySet()
-		as a domain can have broken assets.BetterWithOreGen.textures without any missing assets.BetterWithOreGen.textures
+		as a domain can have broken assets.betterwithoregen.textures without any missing assets.betterwithoregen.textures
 
 Build 1.8-11.14.3.1549:
 	fry: Obj loader: fix vertices shared between faces having the same attributed (uvs/normals).
@@ -5376,7 +5376,7 @@ Build 1.8-11.14.3.1483:
 	bernhard.bonigl: Fix StateMap always mapping properties to the "minecraft" domain instead of the mods, causing it to not find BlockState definitions.
 
 Build 1.8-11.14.3.1482:
-	LexManos: Add debug for max texture size and output when Texture Atlas can not stitch all assets.BetterWithOreGen.textures.
+	LexManos: Add debug for max texture size and output when Texture Atlas can not stitch all assets.betterwithoregen.textures.
 
 Build 1.7.10-10.13.4.1481-1.7.10:
 	cpw: ObjectHolder works great, but it should be a lot less spammy about failed lookups. They're usually mod options.
@@ -5386,7 +5386,7 @@ Build 1.8-11.14.3.1480:
 
 Build 1.8-11.14.3.1479:
 	fry: Fixed perspective transformations for item models.
-	fry: Vanilla models can now use custom assets.BetterWithOreGen.textures. Fixes #1962
+	fry: Vanilla models can now use custom assets.betterwithoregen.textures. Fixes #1962
 	fry: There's no Map.getOrDefault in java6.
 
 Build 1.8-11.14.3.1476:
@@ -5402,7 +5402,7 @@ Build 1.8-11.14.3.1474:
 	LexManos: Create config folder in SplashProgress if it does not exist.
 	LexManos: Add the stitching allocation stage to loading screen.
 	LexManos:
-		Make TextureMap for items and blocks skip the first pass of loading/stitching assets.BetterWithOreGen.textures.
+		Make TextureMap for items and blocks skip the first pass of loading/stitching assets.betterwithoregen.textures.
 		Should decrease loading times for large packs.
 		May cause issues with some mods so use -Dfml.skipFirstTextureLoad=false to disable.
 	LexManos: Add TextureManager to loading screen.
@@ -5433,7 +5433,7 @@ Build 1.7.10-10.13.4.1469-1.7.10:
 	LexManos: Create config folder in SplashProgress if it does not exist.
 	LexManos: Add the stitching allocation stage to loading screen.
 	LexManos:
-		Make TextureMap for items and blocks skip the first pass of loading/stitching assets.BetterWithOreGen.textures.
+		Make TextureMap for items and blocks skip the first pass of loading/stitching assets.betterwithoregen.textures.
 		Should decrease loading times for large packs.
 		May cause issues with some mods so use -Dfml.skipFirstTextureLoad=false to disable.
 
@@ -5587,7 +5587,7 @@ Build 1.8-11.14.2.1433:
 	fry:
 		B3D Improvements
 		 - fixed keyframe transformation application
-		 - assets.BetterWithOreGen.textures are now resolved the same way as in vanilla models
+		 - assets.betterwithoregen.textures are now resolved the same way as in vanilla models
 		 - added the ability to use forge blockstate texture information
 		 - removed unused code from the B3D example
 
@@ -5714,7 +5714,7 @@ Build 1.8-11.14.2.1421:
 		MinecraftForge/FML@ce791cb1f2cf983ef77b1e5c4028ddefab394062 Rework EventSubscriptionTransformer to bake @Cancelable and @HasResult values, should increase EventBus performance even more by removing logic from Event constructors.
 		MinecraftForge/FML@852710962a9b6d7c8e2ca188c715eebb2da44c2a Clean up some dead code
 	cpw: MinecraftForge/FML@be5ec06e3144d55a03d125f3ce364eade3771f4f Cleaning up the missing resource stack spam, and condensing the information into a usefully understandable format.
-	cpw: MinecraftForge/FML@0da1263ff9ede99267c03728a1c823b8056d5e44 Enhance error output for bad assets.BetterWithOreGen.textures a bit more and try and capture more types of error..
+	cpw: MinecraftForge/FML@0da1263ff9ede99267c03728a1c823b8056d5e44 Enhance error output for bad assets.betterwithoregen.textures a bit more and try and capture more types of error..
 	cpw:
 		Fluids are now tracked internally by mod. This allows for the server and the world to specify a "default"
 		in the case of a possible alternative fluid implementation. If you always called registerFluid, things
@@ -5788,7 +5788,7 @@ Build 1.8-11.14.2.1421:
 		MinecraftForge/FML@0059c630281b7105c0532d2dba1bec27cf0323b2 Track mipmaps and texture upload
 		MinecraftForge/FML@ef5f809752e87e369235e98a63027e9347185cd9 Fix broken log message in vanilla.
 	cpw:
-		MinecraftForge/FML@4fe7b469b5ba156d4a786cd9e105b18cca7c271a Loading screen: logo rotation is now optional; initial support for animated assets.BetterWithOreGen.textures - animation rate is fixed for now.
+		MinecraftForge/FML@4fe7b469b5ba156d4a786cd9e105b18cca7c271a Loading screen: logo rotation is now optional; initial support for animated assets.betterwithoregen.textures - animation rate is fixed for now.
 		MinecraftForge/FML@31ae43590a2ba771d69b6c6513bcd5fe87ae8f8f Fix trying to close the screen during error.
 	cpw: MinecraftForge/FML@94821fac98e64d9b8ad7434ed23a621850a8e11c Add a config file that lets you add additional soft dependencies at runtime - injectedDependencies.json
 	cpw: MinecraftForge/FML@2ed00c4da0ee76eb15e28eb8ee2c07a3096155c2 Splash progress screen will not load in the presence of optifine anymore.
@@ -5796,7 +5796,7 @@ Build 1.8-11.14.2.1421:
 	fry:
 		Updated FML:
 		MinecraftForge/FML@2ed00c4da0ee76eb15e28eb8ee2c07a3096155c2 Splash progress screen will not load in the presence of optifine anymore.
-		MinecraftForge/FML@adcf2247c69f68415033a3c0b2c527053733514c Loading screen: moved config file to the standard config directory; added the option to load assets.BetterWithOreGen.textures from the custom resource pack
+		MinecraftForge/FML@adcf2247c69f68415033a3c0b2c527053733514c Loading screen: moved config file to the standard config directory; added the option to load assets.betterwithoregen.textures from the custom resource pack
 		MinecraftForge/FML@91338433fa74e782e237643632de2cc5e17ee280 Add classloader exclusion for ASM
 		MinecraftForge/FML@7c10b93a2ded2799d41b73b67a2766c31e992d8a Synchronize the available libraries. Turns out we've been forcing a newer apache commons-lang(3.2.1) for a long time, also sync the dev guava - we've been forcing 17 for a long time too. Bumping commons-lang to 3.3.2 since that's what Mojang are shipping with 1.8. It has no observable ill effects Closes MinecraftForge/FML#651
 		MinecraftForge/FML@8ccfa24764a3f4854f5334c0da1224286175e13b Merge pull request MinecraftForge/FML#650 from luacs1998/1.7.10
@@ -5893,7 +5893,7 @@ Build 1.7.10-10.13.3.1403-1.7.10:
 	fry:
 		Updated FML:
 		MinecraftForge/FML@2ed00c4da0ee76eb15e28eb8ee2c07a3096155c2 Splash progress screen will not load in the presence of optifine anymore.
-		MinecraftForge/FML@adcf2247c69f68415033a3c0b2c527053733514c Loading screen: moved config file to the standard config directory; added the option to load assets.BetterWithOreGen.textures from the custom resource pack
+		MinecraftForge/FML@adcf2247c69f68415033a3c0b2c527053733514c Loading screen: moved config file to the standard config directory; added the option to load assets.betterwithoregen.textures from the custom resource pack
 		MinecraftForge/FML@91338433fa74e782e237643632de2cc5e17ee280 Add classloader exclusion for ASM
 		MinecraftForge/FML@7c10b93a2ded2799d41b73b67a2766c31e992d8a Synchronize the available libraries. Turns out we've been forcing a newer apache commons-lang(3.2.1) for a long time, also sync the dev guava - we've been forcing 17 for a long time too. Bumping commons-lang to 3.3.2 since that's what Mojang are shipping with 1.8. It has no observable ill effects Closes MinecraftForge/FML#651
 		MinecraftForge/FML@8ccfa24764a3f4854f5334c0da1224286175e13b Merge pull request MinecraftForge/FML#650 from luacs1998/1.7.10
@@ -5911,7 +5911,7 @@ Build 1.7.10-10.13.3.1401-1710ls:
 	fry:
 		Updated FML:
 		MinecraftForge/FML@2ed00c4da0ee76eb15e28eb8ee2c07a3096155c2 Splash progress screen will not load in the presence of optifine anymore.
-		MinecraftForge/FML@adcf2247c69f68415033a3c0b2c527053733514c Loading screen: moved config file to the standard config directory; added the option to load assets.BetterWithOreGen.textures from the custom resource pack
+		MinecraftForge/FML@adcf2247c69f68415033a3c0b2c527053733514c Loading screen: moved config file to the standard config directory; added the option to load assets.betterwithoregen.textures from the custom resource pack
 		MinecraftForge/FML@91338433fa74e782e237643632de2cc5e17ee280 Add classloader exclusion for ASM
 		MinecraftForge/FML@7c10b93a2ded2799d41b73b67a2766c31e992d8a Synchronize the available libraries. Turns out we've been forcing a newer apache commons-lang(3.2.1) for a long time, also sync the dev guava - we've been forcing 17 for a long time too. Bumping commons-lang to 3.3.2 since that's what Mojang are shipping with 1.8. It has no observable ill effects Closes MinecraftForge/FML#651
 		MinecraftForge/FML@8ccfa24764a3f4854f5334c0da1224286175e13b Merge pull request MinecraftForge/FML#650 from luacs1998/1.7.10
@@ -5942,7 +5942,7 @@ Build 1.7.10-10.13.3.1399-1.7.10:
 		MinecraftForge/FML@0059c630281b7105c0532d2dba1bec27cf0323b2 Track mipmaps and texture upload
 		MinecraftForge/FML@ef5f809752e87e369235e98a63027e9347185cd9 Fix broken log message in vanilla.
 	cpw:
-		MinecraftForge/FML@4fe7b469b5ba156d4a786cd9e105b18cca7c271a Loading screen: logo rotation is now optional; initial support for animated assets.BetterWithOreGen.textures - animation rate is fixed for now.
+		MinecraftForge/FML@4fe7b469b5ba156d4a786cd9e105b18cca7c271a Loading screen: logo rotation is now optional; initial support for animated assets.betterwithoregen.textures - animation rate is fixed for now.
 		MinecraftForge/FML@31ae43590a2ba771d69b6c6513bcd5fe87ae8f8f Fix trying to close the screen during error.
 	cpw: MinecraftForge/FML@94821fac98e64d9b8ad7434ed23a621850a8e11c Add a config file that lets you add additional soft dependencies at runtime - injectedDependencies.json
 	cpw: MinecraftForge/FML@2ed00c4da0ee76eb15e28eb8ee2c07a3096155c2 Splash progress screen will not load in the presence of optifine anymore.
@@ -5961,7 +5961,7 @@ Build 1.7.10-10.13.3.1395-1710ls:
 
 Build 1.7.10-10.13.3.1394-1710ls:
 	cpw:
-		MinecraftForge/FML@4fe7b469b5ba156d4a786cd9e105b18cca7c271a Loading screen: logo rotation is now optional; initial support for animated assets.BetterWithOreGen.textures - animation rate is fixed for now.
+		MinecraftForge/FML@4fe7b469b5ba156d4a786cd9e105b18cca7c271a Loading screen: logo rotation is now optional; initial support for animated assets.betterwithoregen.textures - animation rate is fixed for now.
 		MinecraftForge/FML@31ae43590a2ba771d69b6c6513bcd5fe87ae8f8f Fix trying to close the screen during error.
 
 Build 1.7.10-10.13.3.1393-1710ls:
@@ -6089,7 +6089,7 @@ Build 1.7.10-10.13.3.1367-1.7.10:
 		tracking.
 
 Build 1.7.10-10.13.3.1366-1.7.10:
-	cpw: MinecraftForge/FML@0da1263ff9ede99267c03728a1c823b8056d5e44 Enhance error output for bad assets.BetterWithOreGen.textures a bit more and try and capture more types of error..
+	cpw: MinecraftForge/FML@0da1263ff9ede99267c03728a1c823b8056d5e44 Enhance error output for bad assets.betterwithoregen.textures a bit more and try and capture more types of error..
 
 Build 1.7.10-10.13.3.1365-1.7.10:
 	cpw: MinecraftForge/FML@be5ec06e3144d55a03d125f3ce364eade3771f4f Cleaning up the missing resource stack spam, and condensing the information into a usefully understandable format.
@@ -6209,7 +6209,7 @@ Build 1.8-11.14.1.1350:
 	cpw:
 		MinecraftForge/FML@4ca6f6e19f3c3147fcf48c58669f55478a9a1345 What a dumb oversight. One needs to copy the active substitution set to the active gamedata. Doesn't work well otherwise.
 		MinecraftForge/FML@6f6cec96be73b4c94999cf60dc00741f3f3c2cc2 Substitutions need to be activated when they're registered, otherwise they won't appear in world, ever.
-		MinecraftForge/FML@13ac015f0c36b8e2091ae332c556be315429f4c8 Change iterator behaviour for the registry - include substitutions in the standard iterator, so that vanilla MC methods visit them (so they can get assets.BetterWithOreGen.textures etc). The fml special one only visits the absolute set, used mostly for sanity checking and serialization.
+		MinecraftForge/FML@13ac015f0c36b8e2091ae332c556be315429f4c8 Change iterator behaviour for the registry - include substitutions in the standard iterator, so that vanilla MC methods visit them (so they can get assets.betterwithoregen.textures etc). The fml special one only visits the absolute set, used mostly for sanity checking and serialization.
 	LexManos:
 		MinecraftForge/FML@24cb4a42c4e4bddde95c0e49d1f8b8bcc20c626d Enhance output of common FML errors in crash reports and server GUI.
 		Force load anonymous minecraft classes used in crash reports. This prevents some crashes being hiddedn behind class definiton exceptions.
@@ -6227,7 +6227,7 @@ Build 1.8-11.14.1.1350:
 		MinecraftForge/FML@6edc1635de163c41b6b5dfe02bee13d6a9c5aa4d Need to load the dimension from disk - do it without filling out the player so that the normal player loading (including events) works properly
 		MinecraftForge/FML@4ca6f6e19f3c3147fcf48c58669f55478a9a1345 What a dumb oversight. One needs to copy the active substitution set to the active gamedata. Doesn't work well otherwise.
 		MinecraftForge/FML@6f6cec96be73b4c94999cf60dc00741f3f3c2cc2 Substitutions need to be activated when they're registered, otherwise they won't appear in world, ever.
-		MinecraftForge/FML@13ac015f0c36b8e2091ae332c556be315429f4c8 Change iterator behaviour for the registry - include substitutions in the standard iterator, so that vanilla MC methods visit them (so they can get assets.BetterWithOreGen.textures etc). The fml special one only visits the absolute set, used mostly for sanity checking and serialization.
+		MinecraftForge/FML@13ac015f0c36b8e2091ae332c556be315429f4c8 Change iterator behaviour for the registry - include substitutions in the standard iterator, so that vanilla MC methods visit them (so they can get assets.betterwithoregen.textures etc). The fml special one only visits the absolute set, used mostly for sanity checking and serialization.
 		MinecraftForge/FML@24cb4a42c4e4bddde95c0e49d1f8b8bcc20c626d Enhance output of common FML errors in crash reports and server GUI.
 		MinecraftForge/FML@12ccf9cf49b76140841cdc5a459422ae4781de1a Rather than try to fall back to the backup level.dat in case of weirdness in the ID map, just fail hard. There is probably a serious modder derp in this case and there's nothing FML can do to recover the situation except avoid making it worse.
 		MinecraftForge/FML@e8cd368da30661ed2898fff232e2db787edcbdcc It's an IllegalState not an IllegalArgument *sigh*
@@ -6277,7 +6277,7 @@ Build 1.7.10-10.13.2.1342-1.7.10:
 	cpw:
 		MinecraftForge/FML@4ca6f6e19f3c3147fcf48c58669f55478a9a1345 What a dumb oversight. One needs to copy the active substitution set to the active gamedata. Doesn't work well otherwise.
 		MinecraftForge/FML@6f6cec96be73b4c94999cf60dc00741f3f3c2cc2 Substitutions need to be activated when they're registered, otherwise they won't appear in world, ever.
-		MinecraftForge/FML@13ac015f0c36b8e2091ae332c556be315429f4c8 Change iterator behaviour for the registry - include substitutions in the standard iterator, so that vanilla MC methods visit them (so they can get assets.BetterWithOreGen.textures etc). The fml special one only visits the absolute set, used mostly for sanity checking and serialization.
+		MinecraftForge/FML@13ac015f0c36b8e2091ae332c556be315429f4c8 Change iterator behaviour for the registry - include substitutions in the standard iterator, so that vanilla MC methods visit them (so they can get assets.betterwithoregen.textures etc). The fml special one only visits the absolute set, used mostly for sanity checking and serialization.
 
 Build 1.8-11.14.1.1341:
 	simonbarnes1:
@@ -6420,7 +6420,7 @@ Build 1.8-11.14.1.1308:
 	LexManos: Fixed debugging Dedicated server in Forge Dev workspace.
 	LexManos: Fixed being kicked from the server while swimming.
 	fry:
-		fixed NPE during loading of B3D models without assets.BetterWithOreGen.textures/brushes.
+		fixed NPE during loading of B3D models without assets.betterwithoregen.textures/brushes.
 		changed default B3D color to have full opacity.
 	fry: Reworked vanilla texture resolution, hopefully fixes NPE bug in FaceBakery
 	fry: made renderLayer ThreadLocal, now it should hold correct value for use inside custom baked models
@@ -6502,7 +6502,7 @@ Build 1.8-11.14.0.1296:
 	LexManos: Remove debug patch I left in.
 	LexManos: Fix finding of spawn location for mobs. Closes #1546
 	LexManos: Only call blockBreak when block itself changes, not just meta. Fixes bottles poping out of brewing stands.
-	fry: Added model bake event (allows mods to insert custom baked models, much like TextureStitchEvent allows to load custom assets.BetterWithOreGen.textures), ISmartBlock/ItemModel (ability form models to react to block/item states), Block.getExtendedState, support for unlisted properties in block states. Includes example implementation of http://imgur.com/a/FyyJX
+	fry: Added model bake event (allows mods to insert custom baked models, much like TextureStitchEvent allows to load custom assets.betterwithoregen.textures), ISmartBlock/ItemModel (ability form models to react to block/item states), Block.getExtendedState, support for unlisted properties in block states. Includes example implementation of http://imgur.com/a/FyyJX
 	LexManos: Added Explosion Start and Detonate events to control explosion.
 	LexManos: Fixed bug in ServerConfigurationManager.transferPlayerToDimension where it would send the old dimension's information.
 	LexManos: Add "sand" to the OreDictionary
@@ -6712,7 +6712,7 @@ Build 1.8-11.14.0.1268-1.8:
 	LexManos: Fix userdev for new BlockState change.
 
 Build 1.8-11.14.0.1267-1.8:
-	fry: Added model bake event (allows mods to insert custom baked models, much like TextureStitchEvent allows to load custom assets.BetterWithOreGen.textures), ISmartBlock/ItemModel (ability form models to react to block/item states), Block.getExtendedState, support for unlisted properties in block states. Includes example implementation of http://imgur.com/a/FyyJX
+	fry: Added model bake event (allows mods to insert custom baked models, much like TextureStitchEvent allows to load custom assets.betterwithoregen.textures), ISmartBlock/ItemModel (ability form models to react to block/item states), Block.getExtendedState, support for unlisted properties in block states. Includes example implementation of http://imgur.com/a/FyyJX
 
 Build 1.8-11.14.0.1266-1.8:
 	LexManos: Untie ItemModelMesher from using Item Ids internally by implementing our own simple mechanics using Trove.
@@ -9218,7 +9218,7 @@ Build 1.6.1-8.9.0.774:
 		dimension, as well as transfer them to respawn "clones"
 
 Build 1.6.1-8.9.0.773:
-	LexManos: Re-gather list of Icons when atlas assets.BetterWithOreGen.textures are stitched, allows for addition/removal of blocks/items after the atlas's inital constrction.
+	LexManos: Re-gather list of Icons when atlas assets.betterwithoregen.textures are stitched, allows for addition/removal of blocks/items after the atlas's inital constrction.
 
 Build 1.6.1-8.9.0.772:
 	LexManos: Fix enchantment effect on single pass items. Closes #644
@@ -9333,7 +9333,7 @@ Build 1.6.1-8.9.0.769-newliquid:
 	LexManos: Fix bound texture in Controls screen, Closes #631 and #629
 	LexManos: Make Block.setIconName public
 	LexManos: Update filler block to prevent useless console warning.
-	LexManos: Fix resource domain when loading icon. Textures should be located in /assets/{domain}/assets.BetterWithOreGen.textures/{block|item}/{name}.png Same strcutre as before except 'assets' instead of 'mods'.
+	LexManos: Fix resource domain when loading icon. Textures should be located in /assets/{domain}/assets.betterwithoregen.textures/{block|item}/{name}.png Same strcutre as before except 'assets' instead of 'mods'.
 	LexManos: Update ChestGenHooks for new Dungeon chest strcture.
 	Christian:
 		Start: f1b533ad87ea08d6e62259c59779bcec1636e2fe
@@ -9437,7 +9437,7 @@ Build 1.6.1-8.9.0.757:
 Build 1.6.1-8.9.0.756:
 	LexManos: Make Block.setIconName public
 	LexManos: Update filler block to prevent useless console warning.
-	LexManos: Fix resource domain when loading icon. Textures should be located in /assets/{domain}/assets.BetterWithOreGen.textures/{block|item}/{name}.png Same strcutre as before except 'assets' instead of 'mods'.
+	LexManos: Fix resource domain when loading icon. Textures should be located in /assets/{domain}/assets.betterwithoregen.textures/{block|item}/{name}.png Same strcutre as before except 'assets' instead of 'mods'.
 
 Build 1.6.1-8.9.0.755:
 	LexManos: Update ToolMaterial enum helper.
@@ -9635,7 +9635,7 @@ Build 1.5.2-7.8.0.711:
 		DimensionRegisterPacket class, MCPC now has the ability to send the
 		required packet to client to register a dimension with DimensionManager.
 	LexManos: Cleanup Dimension Registration packet, generate takes no arguments, and added fix to world to prevent providers from overwriting the dimension ID.
-	LexManos: Fix potential GL issue when atlas animations bind assets.BetterWithOreGen.textures without informating RenderEngine.
+	LexManos: Fix potential GL issue when atlas animations bind assets.betterwithoregen.textures without informating RenderEngine.
 
 Build 1.5.2-7.8.0.710:
 	LexManos:
@@ -9938,9 +9938,9 @@ Build 1.5.1-7.7.1.642:
 
 Build 1.5.1-7.7.1.640:
 	LexManos: Small optimization for usages of Minecraft.getGLMaximumTextureSize(), only need to calculate it once.
-	LexManos: Small bugfix in Stitcher that was preventing ti from fully filling the possible texture space. Should lower the amount of empty space in assets.BetterWithOreGen.textures.
+	LexManos: Small bugfix in Stitcher that was preventing ti from fully filling the possible texture space. Should lower the amount of empty space in assets.betterwithoregen.textures.
 	LexManos:
-		Optimize Texture loops a bit for non-rotated assets.BetterWithOreGen.textures. Should help the FPS loss on higher resolution texture packs. If it becomes a major issue we may have to look into a more  optimized animation system.
+		Optimize Texture loops a bit for non-rotated assets.betterwithoregen.textures. Should help the FPS loss on higher resolution texture packs. If it becomes a major issue we may have to look into a more  optimized animation system.
 		
 		https://mojang.atlassian.net/browse/MC-13206
 
@@ -9997,11 +9997,11 @@ Build 1.5.1-7.7.1.628:
 	LexManos: Fix EntityPlayer passed to Bonemeal event.
 
 Build 1.5.1-7.7.1.627:
-	LexManos: Fix off-by-one in rotated assets.BetterWithOreGen.textures.
+	LexManos: Fix off-by-one in rotated assets.betterwithoregen.textures.
 	LexManos: Removed index bounds checking in some chunk functions, if you error blame Grum.
 
 Build 1.5.1-7.7.1.625:
-	LexManos: Fix vanilla texture bug causing rotated assets.BetterWithOreGen.textures to be placed wrong.
+	LexManos: Fix vanilla texture bug causing rotated assets.betterwithoregen.textures to be placed wrong.
 
 Build 1.5.1-7.7.1.624:
 	Christian:
@@ -10194,8 +10194,8 @@ Build 1.5-7.7.0.594:
 
 Build 1.5-7.7.0.593:
 	LexManos:
-		New TextureStitchEvents called before and after a TextureMap gathers and stitches assets.BetterWithOreGen.textures together.
-		Also added a config option to diable the writing of resulting stitched assets.BetterWithOreGen.textures to disc. Default disables the writing.
+		New TextureStitchEvents called before and after a TextureMap gathers and stitches assets.betterwithoregen.textures together.
+		Also added a config option to diable the writing of resulting stitched assets.betterwithoregen.textures to disc. Default disables the writing.
 
 Build 1.5-7.7.0.592:
 	LexManos:
@@ -10402,7 +10402,7 @@ Build 1.5-7.7.0.559:
 	Christian: Fix up patches for FML, also, add in FML as a submodule rather than a zip
 	Christian:
 		Add in simple texture management for mods using the stitcher. Scope with "{domain}:{texture}" to
-		get assets.BetterWithOreGen.textures that are not at /assets.BetterWithOreGen.textures/<item|block>/{texture}.png but /mods/{domain}/assets.BetterWithOreGen.textures/<item|block>/{texture}.png
+		get assets.betterwithoregen.textures that are not at /assets.betterwithoregen.textures/<item|block>/{texture}.png but /mods/{domain}/assets.betterwithoregen.textures/<item|block>/{texture}.png
 		instead
 	LexManos: Testing selective commit of submodule.
 	LexManos:
@@ -10421,7 +10421,7 @@ Build 1.5-7.7.0.559:
 	LexManos:
 		Updated FML:
 		MinecraftForge/FML@aed2cc446ad8d5882890c5f218eb894ea7bd2577 Force file name encoding to UTF-8, caused different zips on different systems.
-	LexManos: Fix animation location for assets.BetterWithOreGen.textures with domains
+	LexManos: Fix animation location for assets.betterwithoregen.textures with domains
 	LexManos: Add helper functions for deling with custom TextureStitched
 	LexManos: Add callback on TextureStitched to control texture loading.
 	LexManos: New world event for controlling potential entity spawnlists. For #430
@@ -10432,8 +10432,8 @@ Build 1.5-7.7.0.559:
 		MinecraftForge/FML@debbdc00be8ea1a261cdff83785ddc7100419a74 Capture Minecraft logs into FML logging
 		MinecraftForge/FML@74fffc6fdc2eda8caa9a7feb0826d7babb84751a Update next render to 40
 	Christian:
-		Call stitcher for non-existent assets.BetterWithOreGen.textures as well. Probably allows
-		for generated assets.BetterWithOreGen.textures. Hmmm
+		Call stitcher for non-existent assets.betterwithoregen.textures as well. Probably allows
+		for generated assets.betterwithoregen.textures. Hmmm
 	Christian: let's do it right this time. Hmmm
 	Christian:
 		Updated FML:
@@ -10511,8 +10511,8 @@ Build 13w09c-7.7.0.551-snapshot15:
 
 Build 13w09c-7.7.0.550-snapshot15:
 	Christian:
-		Call stitcher for non-existent assets.BetterWithOreGen.textures as well. Probably allows
-		for generated assets.BetterWithOreGen.textures. Hmmm
+		Call stitcher for non-existent assets.betterwithoregen.textures as well. Probably allows
+		for generated assets.betterwithoregen.textures. Hmmm
 
 Build 13w09c-7.7.0.549-snapshot15:
 	LexManos: Fix ItemSeedFood respecting custom soils.
@@ -10531,7 +10531,7 @@ Build 13w09c-7.7.0.546-snapshot15:
 	LexManos: Add callback on TextureStitched to control texture loading.
 
 Build 13w09c-7.7.0.545-snapshot15:
-	LexManos: Fix animation location for assets.BetterWithOreGen.textures with domains
+	LexManos: Fix animation location for assets.betterwithoregen.textures with domains
 	LexManos: Add helper functions for deling with custom TextureStitched
 
 Build 13w09c-7.7.0.544-snapshot15:
@@ -10549,7 +10549,7 @@ Build 13w09c-7.7.0.542-snapshot15:
 	Christian: Fix up patches for FML, also, add in FML as a submodule rather than a zip
 	Christian:
 		Add in simple texture management for mods using the stitcher. Scope with "{domain}:{texture}" to
-		get assets.BetterWithOreGen.textures that are not at /assets.BetterWithOreGen.textures/<item|block>/{texture}.png but /mods/{domain}/assets.BetterWithOreGen.textures/<item|block>/{texture}.png
+		get assets.betterwithoregen.textures that are not at /assets.betterwithoregen.textures/<item|block>/{texture}.png but /mods/{domain}/assets.betterwithoregen.textures/<item|block>/{texture}.png
 		instead
 	LexManos: Testing selective commit of submodule.
 	LexManos:
@@ -11139,7 +11139,7 @@ Build 1.4.6-6.5.0.454:
 	LexManos: Fixed items dieing improperly due to new EntityItem sync changes, also made items render offset when rendered in 3d.
 
 Build 1.4.6-6.5.0.453:
-	Christian: Fix RenderItem so that forge assets.BetterWithOreGen.textures load for it
+	Christian: Fix RenderItem so that forge assets.betterwithoregen.textures load for it
 
 Build 1.4.6-6.5.0.452:
 	LexManos: Removed all functions marked as deperacted for the new MC version
@@ -11520,7 +11520,7 @@ Build 6.3.0.367:
 Build 6.3.0.366:
 	LexManos: Updated FML, Fixed spelling issues in logs, and file name issues.
 	LexManos: Added saplings and leaves to the ore dict. PR: #242
-	LexManos: Mods can use custom assets.BetterWithOreGen.textures for Slot background overlay, instead of only items.png PR #245 and #246
+	LexManos: Mods can use custom assets.betterwithoregen.textures for Slot background overlay, instead of only items.png PR #245 and #246
 	LexManos: Fix issue where players would spawn in the ground.
 	LexManos: Allow for modders to decide whether or not players are positioned on ridingEntities similarly to pigs PR #244
 	LexManos: Fix breaking despite cancel in creative mode for PlayerInteractEvent OR #247
@@ -12270,7 +12270,7 @@ Build 4.0.0.223:
 		Update FML: 6e01c59
 		6e01c59 Merge ChickenBones pull into FML - adds player trackers
 		a0cbd37 More precise error handling when an invalid class is present
-		12323e2 Fix assets.BetterWithOreGen.textures not applying properly
+		12323e2 Fix assets.betterwithoregen.textures not applying properly
 		789a4a3 Fix up entity spawning - hopefully they won't warp anymore.
 		a87d045 Add in a helper on the server start event for adding commands to the server.
 		82e9309 Move villager trading hook up a bit. thanks sengir.
@@ -13040,7 +13040,7 @@ Build 1.3.4.34:
 
 Build 1.3.4.33:
 	LexManos: Updated MCP's patch files. Fixes hangs on running MC as applet.
-	LexManos: ItemBlock now implements ITextureProvider so that blocks with custom assets.BetterWithOreGen.textures will showup properly when being held.
+	LexManos: ItemBlock now implements ITextureProvider so that blocks with custom assets.betterwithoregen.textures will showup properly when being held.
 
 Build 1.3.4.32:
 	LexManos: Fixed NPE in the login handler
