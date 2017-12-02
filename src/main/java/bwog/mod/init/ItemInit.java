@@ -12,5 +12,6 @@ public class ItemInit
     public static final Item SALT_DUST = new ItemBase("dust_salt");
     public static final Item SALTPETER_DUST = new ItemBase("dust_saltpeter");
     public static final Item SULFUR_DUST = new ItemBase("dust_sulfur");
+    public static final Item CHARCOAL_DUST = new ItemBase("dust_charcoal");
 }
 
