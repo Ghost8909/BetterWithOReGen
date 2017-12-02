@@ -8,10 +8,10 @@ import java.util.List;
 public class ItemInit
 {
     public static final List<Item> ITEMS = new ArrayList();
-    public static final Item POTASH_DUST = new ItemBase("dust_potash");
-    public static final Item SALT_DUST = new ItemBase("dust_salt");
-    public static final Item SALTPETER_DUST = new ItemBase("dust_saltpeter");
-    public static final Item SULFUR_DUST = new ItemBase("dust_sulfur");
-    public static final Item CHARCOAL_DUST = new ItemBase("dust_charcoal");
+    public static final Item DUST_POTASH = new ItemBase("dust_potash");
+    public static final Item DUST_SALT = new ItemBase("dust_salt");
+    public static final Item DUST_SALTPETER = new ItemBase("dust_saltpeter");
+    public static final Item DUST_SULFUR = new ItemBase("dust_sulfur");
+    public static final Item DUST_CHARCOAL = new ItemBase("dust_charcoal");
 }
 

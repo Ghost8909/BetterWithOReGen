@@ -1,0 +1,8 @@
+item.dust_saltpeter.name=Saltpeter Dust
+item.dust_salt.name=Salt Dust
+item.dust_potash.name=Potash Dust
+item.dust_sulfur.name=Sulfur Dust
+item.dust_charcoal.name=Charcoal Dust
+
+tile.block_saltpeter.name=Block of Saltpeter
+tile.ore_saltpeter.name=Saltpeter Ore
